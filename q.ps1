@@ -35,8 +35,8 @@ $bodyo = @{
     "save_me"="0"
     "ajax"="1"
 }
-$ie2 =Invoke-WebRequest http://www.baidu.com -Method GET -MaximumRedirection 0
-while ($ie2.StatusCode -ne 200)
+ping -n 3 www.baidu.com
+while (!$?)
     {
     if ($fan.Contains("online"))
         {
@@ -53,7 +53,7 @@ while ($ie2.StatusCode -ne 200)
         break
     }
     sleep 1
-    $ie2 =Invoke-WebRequest http://www.baidu.com -Method GET -MaximumRedirection 0
+	ping -n 3 www.baidu.com
     }
-    '程序已停止'
+    '已联网,任意键关闭'
     $null = [System.Console]::ReadKey()
