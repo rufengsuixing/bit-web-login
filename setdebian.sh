@@ -1,13 +1,13 @@
 sudo cp /etc/apt/sources.list /etc/apt/sources.list.bak
 sudo cat > /etc/apt/sources.list <<eof
-deb https://mirrors.tuna.tsinghua.edu.cn/debian/ stretch main contrib non-free
-deb-src https://mirrors.tuna.tsinghua.edu.cn/debian/ stretch main contrib non-free
-deb https://mirrors.tuna.tsinghua.edu.cn/debian/ stretch-updates main contrib non-free
-deb-src https://mirrors.tuna.tsinghua.edu.cn/debian/ stretch-updates main contrib non-free
-deb https://mirrors.tuna.tsinghua.edu.cn/debian/ stretch-backports main contrib non-free
-deb-src https://mirrors.tuna.tsinghua.edu.cn/debian/ stretch-backports main contrib non-free
-deb https://mirrors.tuna.tsinghua.edu.cn/debian-security stretch/updates main contrib non-free
-deb-src https://mirrors.tuna.tsinghua.edu.cn/debian-security stretch/updates main contrib non-free
+deb http://mirrors.163.com/debian/ stretch main non-free contrib
+deb http://mirrors.163.com/debian/ stretch-updates main non-free contrib
+deb http://mirrors.163.com/debian/ stretch-backports main non-free contrib
+deb-src http://mirrors.163.com/debian/ stretch main non-free contrib
+deb-src http://mirrors.163.com/debian/ stretch-updates main non-free contrib
+deb-src http://mirrors.163.com/debian/ stretch-backports main non-free contrib
+deb http://mirrors.163.com/debian-security/ stretch/updates main non-free contrib
+deb-src http://mirrors.163.com/debian-security/ stretch/updates main non-free contrib
 eof
 sudo apt-get install libssl1.0
 sudo chmod 777 /var/log
