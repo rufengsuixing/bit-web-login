@@ -30,6 +30,9 @@ server 10.0.0.9
 server 211.157.15.189
 server 210.22.84.3
 server 203.240.193.11
+server-tcp 8.8.8.8
+server-tcp 114.114.114.114
+server-tcp 119.29.29.29
 eof
 ls /usr/lib/x86_64-linux-gnu
 ln -s ./libssl.so.1.0.2 ./libssl.so.1.0.0
