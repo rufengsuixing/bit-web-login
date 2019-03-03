@@ -9,6 +9,7 @@ deb-src http://mirrors.163.com/debian/ stretch-backports main non-free contrib
 deb http://mirrors.163.com/debian-security/ stretch/updates main non-free contrib
 deb-src http://mirrors.163.com/debian-security/ stretch/updates main non-free contrib
 eof
+sudo apt-get update
 sudo apt-get install libssl1.0
 sudo chmod 777 /var/log
 sudo chmod 777 /var/run
