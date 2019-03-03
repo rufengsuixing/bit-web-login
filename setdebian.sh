@@ -30,3 +30,6 @@ server 211.157.15.189
 server 210.22.84.3
 server 203.240.193.11
 eof
+ls /usr/lib/x86_64-linux-gnu
+sudo ln -s ./libssl.so.1.0.2 ./libssl.so.1.0.0
+sudo ln -s ./libcrypto.so.1.0.2 ./libcrypto.so.1.0.0
