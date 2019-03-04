@@ -34,6 +34,6 @@ server-tcp 8.8.8.8
 server-tcp 114.114.114.114
 server-tcp 119.29.29.29
 eof
-ls /usr/lib/x86_64-linux-gnu
+cd /usr/lib/x86_64-linux-gnu
 ln -s ./libssl.so.1.0.2 ./libssl.so.1.0.0
 ln -s ./libcrypto.so.1.0.2 ./libcrypto.so.1.0.0
