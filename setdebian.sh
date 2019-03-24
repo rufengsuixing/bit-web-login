@@ -14,8 +14,8 @@ sudo apt-get install libssl1.0
 sudo chmod 777 /var/log
 sudo chmod 777 /var/run
 sudo wget --no-check-certificate https://github.com/pymumu/smartdns/releases/download/Release22/smartdns.1.2019.03.15-2307.x86_64.tar.gz
-tar -zxvf smartdns.1.2019.03.02-1141.x86_64.tar.gz
-rm smartdns.1.2019.03.02-1141.x86_64.tar.gz
+tar -zxvf smartdns.1.2019.03.15-2307.x86_64.tar.gz
+rm smartdns.1.2019.03.15-2307.x86_64.tar.gz
 cd smartdns/etc/smartdns
 mv smartdns.conf smartdns.conf.bak
 cat >smartdns.conf <<eof
